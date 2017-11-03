@@ -1,3 +1,9 @@
-const a = document.getElementById("dinamo")
+const dinamo = document.getElementById("dinamo")
+let counter = 0
 
-console.log(a)
+dinamo.addEventListener("touchmove", () => {
+	counter++
+	if (counter === 100) {
+		alert(100)
+	}
+})
